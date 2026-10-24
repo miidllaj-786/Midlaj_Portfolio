@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Muhammed Midlaj P | Flutter Development Intern</title>
+  <meta name="description" content="Personal portfolio of Muhammed Midlaj P, a passionate Flutter Development Intern at Bridgeon Solution specializing in Flutter, Dart, HTML, CSS, JavaScript, and learning Hive local database.">
+  <meta name="keywords" content="Muhammed Midlaj P, Flutter Developer, Flutter Intern, Dart, Bridgeon Solution, Mobile App Developer, Portfolio, Hive, HTML, CSS, JavaScript">
+  <meta name="author" content="Muhammed Midlaj P">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Muhammed Midlaj P | Flutter Development Intern">
+  <meta property="og:description" content="Explore the portfolio of Muhammed Midlaj P, Flutter Development Intern at Bridgeon Solution.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon (SVG data URI for immediate, zero-dependency crisp rendering) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23164500'/%3E%3Ctext x='50' y='64' font-family='sans-serif' font-size='46' font-weight='bold' fill='%239BEF62' text-anchor='middle'%3EMM%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Poppins & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- EmailJS Browser SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Accessible Skip to Main Content Link -->
+  <a href="#home" class="skip-link">Skip to main content</a>
+
+  <!-- Animated Ambient Background Mesh -->
+  <div class="ambient-background" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- HEADER & NAVIGATION BAR                                        -->
+  <!-- ============================================================== -->
+  <header class="site-header" id="header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Muhammed Midlaj Parammal Homepage">
+        <span class="logo-text">Muhammed Midlaj Parammal</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list" role="menubar">
+          <li class="nav-item" role="none">
+            <a href="#home" class="nav-link active" role="menuitem" data-section="home">
+              <i class="fa-solid fa-house nav-icon"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="#about" class="nav-link" role="menuitem" data-section="about">
+              <i class="fa-solid fa-user nav-icon"></i>
+              <span>About</span>
+            </a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="#skills" class="nav-link" role="menuitem" data-section="skills">
+              <i class="fa-solid fa-code nav-icon"></i>
+              <span>Skills</span>
+            </a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="#projects" class="nav-link" role="menuitem" data-section="projects">
+              <i class="fa-solid fa-folder-open nav-icon"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="#contact" class="nav-link" role="menuitem" data-section="contact">
+              <i class="fa-solid fa-paper-plane nav-icon"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Close Button -->
+        <button class="nav-close-btn" id="nav-close-btn" aria-label="Close navigation menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button (Light Green default / Dark mode) -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun sun-icon" aria-hidden="true"></i>
+        </button>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Backdrop Overlay -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================================== -->
+  <!-- MAIN CONTENT CONTAINER                                         -->
+  <!-- ============================================================== -->
+  <main id="main-content">
+
+    <!-- ============================================================ -->
+    <!-- 1. HOME / HERO SECTION                                       -->
+    <!-- ============================================================ -->
+    <section class="hero-section section" id="home" aria-label="Hero Section">
+      <div class="container hero-container">
+        
+        <!-- Hero Text & CTA Content (Left Column) -->
+        <div class="hero-content">
+          <!-- Status Pill Badge -->
+          <div class="status-badge-pill" data-aos="fade-down">
+            <span class="pulse-indicator"></span>
+            <span class="badge-text"><i class="fa-solid fa-database"></i> Currently Learning Hive</span>
+          </div>
+
+          <!-- Small Intro -->
+          <p class="hero-intro" data-aos="fade-up">HELLO, I'M</p>
+
+          <!-- Main Heading -->
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+            Muhammed <span class="highlight-text">Midlaj P</span>
+          </h1>
+
+          <!-- Professional Title -->
+          <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+            Flutter Development Intern
+          </h2>
+
+          <!-- Supporting Description -->
+          <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+            I'm a passionate developer learning and building modern web and mobile applications using Flutter and Dart.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-work">
+              <span>Explore My Work</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+              <span>Contact Me</span>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- Quick Social Highlights -->
+          <div class="hero-social-links" data-aos="fade-up" data-aos-delay="500">
+            <span class="social-label">Connect:</span>
+            <a href="https://www.linkedin.com/in/muhammed-midlaj-parammal-b1b176418" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Muhammed's LinkedIn Profile" title="Connect on LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/miidllaj-786" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Muhammed's GitHub Profile" title="Visit GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:parammalmuhammadmidlaj@gmail.com" class="social-icon-btn" aria-label="Send Email to Muhammed" title="Email: parammalmuhammadmidlaj@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Profile Photo & Floating Badges (Right Column) -->
+        <div class="hero-visual" data-aos="zoom-in" data-aos-delay="200">
+          <div class="profile-card-wrapper">
+            <!-- Ambient Glowing Ring -->
+            <div class="profile-glow-ring" aria-hidden="true"></div>
+
+            <!-- Profile Frame -->
+            <div class="profile-frame">
+              <!-- Profile Image with Graceful Initial Fallback -->
+              <img 
+                src="assets/images/profile.jpg" 
+                alt="Muhammed Midlaj P - Profile Photo" 
+                class="profile-img"
+                id="profileImage"
+                onerror="this.style.display='none'; document.getElementById('initialsFallback').style.display='flex';"
+              >
+
+              <!-- Initials Fallback (Displays seamlessly if image file is missing/error) -->
+              <div class="initials-fallback" id="initialsFallback" style="display: none;">
+                <span class="initials-text">MM</span>
+                <span class="initials-sub">Muhammed Midlaj P</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
+        <a href="#about" class="scroll-link" aria-label="Scroll to About section">
+          <span class="scroll-text">Scroll Down</span>
+          <div class="mouse-icon">
+            <span class="mouse-wheel"></span>
+          </div>
+          <i class="fa-solid fa-chevron-down scroll-arrow"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 2. ABOUT ME SECTION                                          -->
+    <!-- ============================================================ -->
+    <section class="about-section section" id="about" aria-label="About Me Section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">Get to Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- About Content Layout -->
+        <div class="about-grid">
+          
+          <!-- Narrative Column -->
+          <div class="about-narrative-card">
+            <div class="card-corner-accent"></div>
+            <div class="narrative-author-header">
+              <div class="about-avatar-wrapper">
+                <img src="assets/images/profile.jpg" alt="Muhammed Midlaj P" class="about-avatar-img">
+                <span class="about-avatar-status" title="Active Developer"></span>
+              </div>
+              <div class="about-author-meta">
+                <h3 class="narrative-heading">Passionate About Mobile Engineering</h3>
+                <span class="narrative-author-name">Muhammed Midlaj P &bull; Flutter Development Intern</span>
+              </div>
+            </div>
+
+            <p class="narrative-text">
+              Hi, I'm Muhammed Midlaj P, a Flutter Development Intern at Bridgeon Solution. I completed my Higher Secondary Education in Journalism at GHSS Edakkara. My journey into software development has helped me develop an interest in building modern, interactive, and user-friendly applications.
+            </p>
+            <p class="narrative-text">
+              I have learned HTML, CSS, JavaScript, Dart, and Flutter. Currently, I'm learning Hive to understand local data storage in Flutter applications. I enjoy learning new technologies, improving my programming skills, and working on practical projects.
+            </p>
+            <p class="narrative-text">
+              My goal is to become a skilled Flutter developer and create useful mobile applications that provide a great user experience.
+            </p>
+
+            <!-- CV Download Trigger Button -->
+            <div class="about-cta">
+              <button class="btn btn-primary" id="downloadCvBtn" aria-label="Download Curriculum Vitae">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Download CV</span>
+              </button>
+              <span class="cv-note"><i class="fa-solid fa-circle-info"></i> PDF Format</span>
+            </div>
+          </div>
+
+          <!-- Personal Information Cards Grid -->
+          <div class="info-cards-grid">
+            
+            <!-- Card 1: Name -->
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fa-solid fa-id-card"></i>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Name</span>
+                <h4 class="info-card-value">Muhammed Midlaj Parammal</h4>
+              </div>
+            </div>
+
+            <!-- Card 2: Current Role -->
+            <div class="info-card highlight-card">
+              <div class="info-card-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Current Role</span>
+                <h4 class="info-card-value">Flutter Development Intern</h4>
+              </div>
+            </div>
+
+            <!-- Card 3: Organization -->
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fa-solid fa-building"></i>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Organization</span>
+                <h4 class="info-card-value">Bridgeon Solution</h4>
+              </div>
+            </div>
+
+            <!-- Card 4: Education -->
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Education</span>
+                <h4 class="info-card-value">Higher Secondary in Journalism</h4>
+              </div>
+            </div>
+
+            <!-- Card 5: Institution -->
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fa-solid fa-school"></i>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">School</span>
+                <h4 class="info-card-value">GHSS Edakkara</h4>
+              </div>
+            </div>
+
+            <!-- Card 6: Completed Skills -->
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Completed Skills</span>
+                <h4 class="info-card-value">HTML, CSS, JavaScript, Dart, Flutter</h4>
+              </div>
+            </div>
+
+            <!-- Card 7: Currently Learning -->
+            <div class="info-card learning-card">
+              <div class="info-card-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Currently Learning</span>
+                <h4 class="info-card-value">Hive Local Database</h4>
+              </div>
+            </div>
+
+            <!-- Card 8: Career Goal -->
+            <div class="info-card highlight-card">
+              <div class="info-card-icon">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <div class="info-card-content">
+                <span class="info-card-label">Career Goal</span>
+                <h4 class="info-card-value">Skilled Flutter Developer</h4>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 3. SKILLS SECTION                                            -->
+    <!-- ============================================================ -->
+    <section class="skills-section section" id="skills" aria-label="Skills Section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">Technologies I'm Learning and Working With</span>
+          <h2 class="section-title">My Skills</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Skills Grid (6 Target Cards) -->
+        <div class="skills-grid" id="skillsGrid">
+          
+          <!-- Skill 1: HTML (80%) -->
+          <div class="skill-card" data-tech="html">
+            <div class="skill-card-top">
+              <div class="skill-icon-box html-color">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="skill-info">
+                <h3 class="skill-name">HTML</h3>
+                <span class="skill-category">Frontend Markup</span>
+              </div>
+              <div class="skill-percent-label" id="percent-html">80%</div>
+            </div>
+            
+            <div class="progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="HTML Proficiency: 80%">
+              <div class="progress-fill" data-progress="80"></div>
+            </div>
+          </div>
+
+          <!-- Skill 2: CSS (80%) -->
+          <div class="skill-card" data-tech="css">
+            <div class="skill-card-top">
+              <div class="skill-icon-box css-color">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="skill-info">
+                <h3 class="skill-name">CSS</h3>
+                <span class="skill-category">Styling & Responsive Design</span>
+              </div>
+              <div class="skill-percent-label" id="percent-css">80%</div>
+            </div>
+            
+            <div class="progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="CSS Proficiency: 80%">
+              <div class="progress-fill" data-progress="80"></div>
+            </div>
+          </div>
+
+          <!-- Skill 3: JavaScript (50%) -->
+          <div class="skill-card" data-tech="javascript">
+            <div class="skill-card-top">
+              <div class="skill-icon-box js-color">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="skill-info">
+                <h3 class="skill-name">JavaScript</h3>
+                <span class="skill-category">Client-side Scripting</span>
+              </div>
+              <div class="skill-percent-label" id="percent-js">50%</div>
+            </div>
+            
+            <div class="progress-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript Proficiency: 50%">
+              <div class="progress-fill" data-progress="50"></div>
+            </div>
+          </div>
+
+          <!-- Skill 4: Dart (90%) - Core Technology -->
+          <div class="skill-card featured-skill" data-tech="dart">
+            <div class="skill-badge-tag core-badge">
+              <i class="fa-solid fa-star"></i> Core Technology
+            </div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box dart-color">
+                <svg viewBox="0 0 24 24" width="28" height="28">
+                  <path fill="#0175C2" d="M4.108 0L0 4.108l14.774 14.774L24 9.774z"/>
+                  <path fill="#02569B" d="M4.108 0L0 4.108l9.108 9.108L18.324 4.108z"/>
+                  <path fill="#01579B" d="M14.774 18.882L9.108 13.216l4.108-4.108 5.666 5.666z"/>
+                  <path fill="#29B6F6" d="M4.108 24L0 19.892l14.774-14.774L24 14.226z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h3 class="skill-name">Dart</h3>
+                <span class="skill-category">Object-Oriented Programming</span>
+              </div>
+              <div class="skill-percent-label" id="percent-dart">90%</div>
+            </div>
+            
+            <div class="progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Dart Proficiency: 90%">
+              <div class="progress-fill" data-progress="90"></div>
+            </div>
+          </div>
+
+          <!-- Skill 5: Flutter (90%) - Core Technology -->
+          <div class="skill-card featured-skill" data-tech="flutter">
+            <div class="skill-badge-tag core-badge">
+              <i class="fa-solid fa-crown"></i> Core Technology
+            </div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box flutter-color">
+                <svg viewBox="0 0 24 24" width="28" height="28">
+                  <path fill="#02569B" d="M14.314 0L2.3 12 6.8 16.5 23.3 0z"/>
+                  <path fill="#0175C2" d="M14.314 11.029L8.714 16.629 14.314 22.229 19.914 16.629z"/>
+                  <path fill="#29B6F6" d="M14.314 22.229L19.914 16.629 23.3 20 17.7 25.6z"/>
+                  <path fill="#02569B" d="M14.314 11.029l5.6 5.6-3.4 3.4-5.6-5.6z"/>
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h3 class="skill-name">Flutter</h3>
+                <span class="skill-category">Cross-Platform Mobile Apps</span>
+              </div>
+              <div class="skill-percent-label" id="percent-flutter">90%</div>
+            </div>
+            
+            <div class="progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Flutter Proficiency: 90%">
+              <div class="progress-fill" data-progress="90"></div>
+            </div>
+          </div>
+
+          <!-- Skill 6: Hive (30%) - Currently Learning -->
+          <div class="skill-card learning-skill-card" data-tech="hive">
+            <div class="skill-badge-tag learning-badge">
+              <span class="pulse-dot-sm"></span> Currently Learning
+            </div>
+            <div class="skill-card-top">
+              <div class="skill-icon-box hive-color">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="skill-info">
+                <h3 class="skill-name">Hive</h3>
+                <span class="skill-category">Flutter Local NoSQL Database</span>
+              </div>
+              <div class="skill-percent-label" id="percent-hive">40%</div>
+            </div>
+            
+            <div class="progress-track" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" aria-label="Hive Proficiency: 30%">
+              <div class="progress-fill" data-progress="40"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 4. PROJECTS SECTION                                          -->
+    <!-- ============================================================ -->
+    <section class="projects-section section" id="projects" aria-label="Projects Section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">Things I've Built and Practiced</span>
+          <h2 class="section-title">My Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Intentional, Elegant Empty State Design -->
+        <div class="projects-empty-state-wrapper">
+          <div class="empty-state-card">
+            
+            <!-- Development Animation Graphic -->
+            <div class="empty-state-icon-container">
+              <div class="empty-state-pulse-glow" aria-hidden="true"></div>
+              <div class="code-art-box">
+                <i class="fa-solid fa-code-merge gear-icon"></i>
+                <div class="art-terminal-preview">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                  <span class="terminal-text">&gt; flutter create awesome_project...</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Badge -->
+            <div class="empty-state-badge">
+              <span class="pulse-indicator"></span>
+              <span>Currently Building My Skills</span>
+            </div>
+
+            <!-- Heading & Description -->
+            <h3 class="empty-state-title">Projects Coming Soon!</h3>
+            <p class="empty-state-description">
+              I'm currently learning, practicing, and building my development skills. New projects will appear here soon.
+            </p>
+
+            <!-- Action Button -->
+            <div class="empty-state-action">
+              <a href="#contact" class="btn btn-primary" id="emptyStateContactBtn">
+                <span>Contact Me</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- FUTURE PROJECT CARD TEMPLATE (COMMENTED FOR EASY USAGE)   -->
+        <!-- To add a project later:                                  -->
+        <!-- 1. Uncomment the template below                          -->
+        <!-- 2. Fill in title, description, tags, image, and links    -->
+        <!-- ======================================================== -->
+        <!--
+        <div class="projects-grid" style="display: none;">
+          <article class="project-card">
+            <div class="project-image-box">
+              <img src="assets/images/project-preview.jpg" alt="Project Screenshot" class="project-img">
+              <div class="project-links-overlay">
+                <a href="https://github.com/your-username/repo" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://your-demo-url.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">Hive</span>
+              </div>
+              <h3 class="project-title">Project Title Here</h3>
+              <p class="project-description">
+                Brief overview of what the application does, key features implemented, and problem it solves.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/your-username/repo" target="_blank" class="project-text-link">
+                  <span>Source Code</span> <i class="fa-solid fa-code"></i>
+                </a>
+                <a href="https://your-demo-url.com" target="_blank" class="project-text-link">
+                  <span>Live Demo</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        -->
+
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- 5. CONTACT SECTION                                           -->
+    <!-- ============================================================ -->
+    <section class="contact-section section" id="contact" aria-label="Contact Section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">Have a question or want to work together? Send me a message!</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Two-Column Contact Layout -->
+        <div class="contact-layout">
+          
+          <!-- LEFT COLUMN: Contact Information & Placeholders -->
+          <div class="contact-info-column">
+            
+            <div class="contact-welcome-card">
+              <h3 class="contact-card-title">Get in Touch</h3>
+              <p class="contact-welcome-message">
+                I am actively seeking Flutter development opportunities, internship projects, and open source collaboration. Feel free to send a message or connect through any of my profiles below!
+              </p>
+
+              <!-- Channels List -->
+              <div class="contact-channels">
+                
+                <!-- Email Channel -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon-box">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-name">Email Address</span>
+                    <a href="mailto:parammalmuhammadmidlaj@gmail.com" class="channel-link" id="contactEmailLink" title="Send Email to Muhammed">
+                      parammalmuhammadmidlaj@gmail.com
+                    </a>
+                    <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Primary Email</span>
+                  </div>
+                </div>
+
+                <!-- LinkedIn Channel -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon-box">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-name">LinkedIn Profile</span>
+                    <a href="https://www.linkedin.com/in/muhammed-midlaj-parammal-b1b176418" target="_blank" rel="noopener noreferrer" class="channel-link" id="contactLinkedinLink" title="Connect with Muhammed on LinkedIn">
+                      linkedin.com/in/muhammed-midlaj-parammal-b1b176418
+                    </a>
+                    <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Connected</span>
+                  </div>
+                </div>
+
+                <!-- GitHub Channel -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon-box">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-name">GitHub Profile</span>
+                    <a href="https://github.com/miidllaj-786" target="_blank" rel="noopener noreferrer" class="channel-link" id="contactGithubLink" title="Visit Muhammed's GitHub Profile">
+                      github.com/miidllaj-786
+                    </a>
+                    <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Connected</span>
+                  </div>
+                </div>
+
+                <!-- Location Channel -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-name">Location</span>
+                    <span class="channel-static-value">Nilambur, Malappuram,<br>Kerala, India</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: Contact Form with EmailJS Integration -->
+          <div class="contact-form-column">
+            
+            <div class="contact-form-card">
+              <h3 class="form-title">Send Me a Message</h3>
+              <p class="form-subtitle">Fill in the fields below and I will respond to your email as soon as possible.</p>
+
+              <!-- Form Element -->
+              <form id="contactForm" class="contact-form" novalidate>
+                
+                <!-- Field 1: Full Name -->
+                <div class="form-group" id="nameGroup">
+                  <label for="userName" class="form-label">
+                    <span>Full Name</span>
+                    <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    <input 
+                      type="text" 
+                      id="userName" 
+                      name="userName" 
+                      class="form-control" 
+                      placeholder="e.g. Alex Johnson" 
+                      required 
+                      minlength="2"
+                      autocomplete="name"
+                    >
+                  </div>
+                  <span class="error-feedback" id="nameError">Please enter your full name (at least 2 characters).</span>
+                </div>
+
+                <!-- Field 2: Email Address -->
+                <div class="form-group" id="emailGroup">
+                  <label for="userEmail" class="form-label">
+                    <span>Email Address</span>
+                    <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-at input-icon"></i>
+                    <input 
+                      type="email" 
+                      id="userEmail" 
+                      name="userEmail" 
+                      class="form-control" 
+                      placeholder="e.g. alex@example.com" 
+                      required 
+                      autocomplete="email"
+                    >
+                  </div>
+                  <span class="error-feedback" id="emailError">Please enter a valid email address (e.g., name@domain.com).</span>
+                </div>
+
+                <!-- Field 3: Subject (Optional) -->
+                <div class="form-group" id="subjectGroup">
+                  <label for="userSubject" class="form-label">
+                    <span>Subject</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-tag input-icon"></i>
+                    <input 
+                      type="text" 
+                      id="userSubject" 
+                      name="userSubject" 
+                      class="form-control" 
+                      placeholder="e.g. Flutter Internship Opportunity" 
+                      autocomplete="off"
+                    >
+                  </div>
+                </div>
+
+                <!-- Field 4: Message -->
+                <div class="form-group" id="messageGroup">
+                  <div class="textarea-header">
+                    <label for="userMessage" class="form-label">
+                      <span>Message</span>
+                      <span class="required-star">*</span>
+                    </label>
+                    <span class="char-count" id="charCount">0 / 500</span>
+                  </div>
+                  <div class="input-wrapper textarea-wrapper">
+                    <i class="fa-solid fa-message input-icon textarea-icon"></i>
+                    <textarea 
+                      id="userMessage" 
+                      name="userMessage" 
+                      class="form-control textarea-control" 
+                      rows="5" 
+                      placeholder="Hi Muhammed, I came across your portfolio and would like to discuss..." 
+                      required 
+                      minlength="10"
+                      maxlength="500"
+                    ></textarea>
+                  </div>
+                  <span class="error-feedback" id="messageError">Please enter a message of at least 10 characters.</span>
+                </div>
+
+                <!-- Live Status Banner (Success / Info / Error) -->
+                <div class="form-status-alert" id="formStatusAlert" style="display: none;" role="alert">
+                  <div class="alert-icon" id="statusAlertIcon"></div>
+                  <div class="alert-content" id="statusAlertContent"></div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-action">
+                  <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                    <span class="btn-spinner" id="btnSpinner" style="display: none;"></span>
+                    <span class="btn-text" id="btnText">Send Message</span>
+                    <i class="fa-solid fa-paper-plane btn-icon" id="btnIcon"></i>
+                  </button>
+                </div>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================== -->
+  <!-- FOOTER                                                         -->
+  <!-- ============================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Top Section -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo footer-logo">
+            <span class="logo-text">Muhammed Midlaj Parammal</span>
+          </a>
+          <p class="footer-bio">
+            Flutter Development Intern at Bridgeon Solution. Passionate about learning, programming, and crafting engaging mobile experiences.
+          </p>
+        </div>
+
+        <!-- Quick Nav Links -->
+        <div class="footer-nav">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#skills" class="footer-link">Skills</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Placeholders -->
+        <div class="footer-social">
+          <h4 class="footer-heading">Social Links</h4>
+          <div class="footer-social-icons">
+            <a href="https://www.linkedin.com/in/muhammed-midlaj-parammal-b1b176418" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn Profile" title="Connect on LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/miidllaj-786" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub Profile" title="Visit GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:parammalmuhammadmidlaj@gmail.com" class="footer-social-btn" aria-label="Email Muhammed" title="Email: parammalmuhammadmidlaj@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Section -->
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <p>&copy; 2026 Muhammed Midlaj P. All rights reserved.</p>
+          <p class="footer-closing-message">Designed with passion and built with a continuous learning mindset.</p>
+        </div>
+
+        <!-- Back to Top Button -->
+        <a href="#home" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top of page">
+          <i class="fa-solid fa-arrow-up"></i>
+          <span>Back to Top</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================== -->
+  <!-- FLOATING BACK-TO-TOP BUTTON                                    -->
+  <!-- ============================================================== -->
+  <button class="floating-back-to-top" id="floatingBackToTop" aria-label="Scroll back to top" title="Back to Top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- ============================================================== -->
+  <!-- INTERACTIVE MODAL FOR CV DOWNLOAD HELPER                       -->
+  <!-- ============================================================== -->
+  <div class="modal-overlay" id="cvModalOverlay" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header">
+        <div class="modal-icon-badge">
+          <i class="fa-solid fa-file-pdf"></i>
+        </div>
+        <h3 class="modal-title" id="modalTitle">Curriculum Vitae</h3>
+      </div>
+      <div class="modal-body">
+        <p class="modal-text" id="cvModalMessage">
+          To enable 1-click CV download for recruiters:
+        </p>
+        <div class="modal-instructions-box">
+          <ol>
+            <li>Save your CV PDF file as <strong><code>assets/cv.pdf</code></strong></li>
+            <li>Once placed in the <code>assets/</code> folder, clicking <strong>Download CV</strong> will instantly download your resume.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modalDismissBtn">Got It</button>
+        <a href="#contact" class="btn btn-primary" id="modalContactBtn">Contact Directly</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Configuration File -->
+  <script src="js/config.js"></script>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
