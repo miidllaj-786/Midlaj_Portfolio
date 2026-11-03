@@ -31,8 +31,12 @@ const PORTFOLIO_CONFIG = {
     company: "Bridgeon Solution",
     education: "Higher Secondary Education in Journalism at GHSS Edakkara",
     emailPlaceholder: "parammalmuhammadmidlaj@gmail.com", // Your official email address
+    whatsapp: "+91 7306388198", // Your official WhatsApp phone number
+    whatsappUrl: "https://wa.me/917306388198", // Direct WhatsApp chat link
     linkedinPlaceholder: "https://www.linkedin.com/in/muhammed-midlaj-parammal-b1b176418", // Your official LinkedIn profile URL
     githubPlaceholder: "https://github.com/miidllaj-786", // Your official GitHub profile URL
+    instagramPlaceholder: "https://www.instagram.com/_miidllaj_/", // Your official Instagram profile URL
+    facebookPlaceholder: "https://www.facebook.com/search/top/?q=Muhammed%20Midlaj%20Parammal", // Your official Facebook profile URL
     cvPath: "assets/cv.pdf" // Place your CV pdf at assets/cv.pdf
   },
 

@@ -28,14 +28,14 @@ Designed with a signature **Light Green Theme** (`#9BEF62` / `#164500`), smooth 
     3. JavaScript — 50%
     4. Dart — 90% (Core Technology badge)
     5. Flutter — 90% (Core Technology badge)
-    6. Hive — 30% (Currently Learning badge)
+    6. Hive — 60% (Currently Learning badge)
   - Horizontal progress bars animated via `IntersectionObserver` when scrolled into view.
 - **Projects Section**:
   - Intentional, polished empty-state design with terminal artwork and *"Projects Coming Soon!"* messaging.
   - No fake projects shown.
   - Ready-to-use commented template for adding real projects in the future.
 - **Contact Section & Working Form**:
-  - Two-column layout with contact channels and placeholders.
+  - Two-column layout with contact channels (Email, WhatsApp direct chat, LinkedIn, GitHub, Instagram, Facebook, and Location).
   - Full Name, Email Address, and Message fields with live validation.
   - Character counter for messages.
   - Loading spinner & double-submission prevention.
@@ -156,7 +156,9 @@ const PORTFOLIO_CONFIG = {
     title: "Flutter Development Intern",
     company: "Bridgeon Solution",
     education: "Higher Secondary Education in Journalism at GHSS Edakkara",
-    emailPlaceholder: "your.real.email@gmail.com",
+    emailPlaceholder: "parammalmuhammadmidlaj@gmail.com",
+    whatsapp: "+91 7306388198",
+    whatsappUrl: "https://wa.me/917306388198",
     linkedinPlaceholder: "https://linkedin.com/in/your-profile",
     githubPlaceholder: "https://github.com/your-username",
     cvPath: "assets/cv.pdf"
