@@ -285,31 +285,21 @@
   }
 
   if (downloadCvBtn) {
-    downloadCvBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const cvPath = (window.PORTFOLIO_CONFIG && window.PORTFOLIO_CONFIG.personal.cvPath) || 'assets/cv.pdf';
-
-      // Check if real CV exists via HEAD fetch request
-      fetch(cvPath, { method: 'HEAD' })
-        .then((response) => {
-          if (response.ok) {
-            // Real file exists: trigger direct download
-            const link = document.createElement('a');
-            link.href = cvPath;
-            link.download = 'Muhammed_Midlaj_P_CV.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-          } else {
-            // File not yet placed: show helpful instructions modal
-            openCvModal();
-          }
-        })
-        .catch(() => {
-          // Local offline or fetch failure: open helpful modal
-          openCvModal();
-        });
-    });
+    // If it's already an <a> anchor with href, browser handles native download directly.
+    // For non-anchor buttons, provide programmatic download trigger.
+    if (downloadCvBtn.tagName.toLowerCase() === 'button') {
+      downloadCvBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const cvPath = (window.PORTFOLIO_CONFIG && window.PORTFOLIO_CONFIG.personal.cvPath) || 'assets/cv.pdf';
+        const link = document.createElement('a');
+        link.href = cvPath;
+        link.download = 'Muhammed_Midlaj_P_CV.pdf';
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+    }
   }
 
   if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeCvModal);

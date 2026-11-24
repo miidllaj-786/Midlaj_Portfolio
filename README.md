@@ -16,7 +16,6 @@ Designed with a signature **Light Green Theme** (`#9BEF62` / `#164500`), smooth 
   - Profile image with glowing frame, subtle floating animation, and orbiting technology badges (HTML5, CSS3, JavaScript, Dart, Flutter).
   - Elegant monogram fallback ("MM") if the photo is missing.
   - Interactive *"Explore My Work"* and *"Contact Me"* buttons.
-  - Animated scroll-down mouse indicator.
 - **About Me Section**:
   - Personal narrative describing background, education in Journalism at GHSS Edakkara, and development internship at Bridgeon Solution.
   - 8 organized personal info cards with distinct icons.
@@ -28,7 +27,7 @@ Designed with a signature **Light Green Theme** (`#9BEF62` / `#164500`), smooth 
     3. JavaScript — 50%
     4. Dart — 90% (Core Technology badge)
     5. Flutter — 90% (Core Technology badge)
-    6. Hive — 60% (Currently Learning badge)
+    6. Hive — 80% (Core Technology badge)
   - Horizontal progress bars animated via `IntersectionObserver` when scrolled into view.
 - **Projects Section**:
   - Intentional, polished empty-state design with terminal artwork and *"Projects Coming Soon!"* messaging.
